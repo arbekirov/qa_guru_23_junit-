@@ -1,0 +1,49 @@
+plugins {
+    id 'java'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+
+group = 'ru.arbekirov'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.jetbrains:annotations:24.0.0'
+    testImplementation(
+            "org.junit.jupiter:junit-jupiter:5.10.0",
+            "com.codeborne:selenide:6.19.1",
+            'org.slf4j:slf4j-simple:2.0.7'
+    )
+}
+
+test {
+    useJUnitPlatform()
+}
+// Задача для запуска тестов с тегом "smoke"
+tasks.register('smoke', Test) {
+    testLogging {
+        events "passed", "skipped", "failed", "standardOut", "standardError"
+        exceptionFormat "full"
+    }
+    useJUnitPlatform {
+        includeTags("smoke")
+    }
+}
+
+// Задача для запуска тестов с тегом "regress"
+tasks.register('regress', Test) {
+    testLogging {
+        events "passed", "skipped", "failed", "standardOut", "standardError"
+        exceptionFormat "full"
+    }
+    useJUnitPlatform {
+        includeTags("regress")
+    }
+}
