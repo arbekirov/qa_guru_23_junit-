@@ -15,8 +15,8 @@ public class PobedaAeroWebTest extends TestBase {
 
 
     public static void main(String[] args) {
-        System.out.println(Language.Русcкий.description);
-        System.out.println(Language.English.description);
+        System.out.println(Language.RU.description);
+        System.out.println(Language.EN.description);
     }
 @EnumSource(Language.class)
     @ParameterizedTest(name = "Проверка текста для поискового запроса {0}" )
