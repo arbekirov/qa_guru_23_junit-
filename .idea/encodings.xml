@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/.gitignore" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/.gradle" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/.idea" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/build" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/build.gradle" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/gradle" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/gradlew" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/gradlew.bat" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/qa_guru_23_junit" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/settings.gradle" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src" charset="windows-1251" />
+  </component>
+</project>
